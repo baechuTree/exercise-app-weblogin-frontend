@@ -1,3 +1,5 @@
+**배포할 때 package.json의 proxy 속성에 백엔드 서버 URL을 넣어줄 것!**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
