@@ -1,4 +1,4 @@
-**배포할 때 package.json의 proxy 속성에 백엔드 서버 URL을 넣어줄 것!**
+***impotant(중요): 배포할 때 package.json의 proxy 속성에 백엔드 서버 URL을 넣어줄 것!**
 
 # Getting Started with Create React App
 
