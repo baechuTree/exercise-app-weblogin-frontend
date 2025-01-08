@@ -4,7 +4,7 @@ import api from "./api";
 export const getFolders = async () => {
   try {
     const response = await api.get("/folders"); //얘가 오류가 난다
-    //api.js에서 baseApi를 localhost:5000/api 로 해놨기 때문에 여기선 주소에 /api를 안 써줘도 됨
+    //api.js에서 baseapi를 설정했기 때문에 여기선 주소에 /api를 안 써줘도 됨
     return response.data;
   } catch(e) {
     if (e.response && e.response.status === 401) {

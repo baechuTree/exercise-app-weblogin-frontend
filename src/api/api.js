@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api", // 백엔드 API의 기본 URL
+  baseURL: process.env.REACT_APP_BACKEND_URL, // 백엔드 API의 기본 URL
   headers: {
     "Content-Type": "application/json",
   },

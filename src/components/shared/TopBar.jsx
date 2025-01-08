@@ -29,22 +29,21 @@ const TopBar = (props) => {
                 <TbArrowLeft className="back-btn" onClick={back} />
             }
             <h1>{children}</h1>
-            <div className="login-btn">
-                {auth.user ? (
+            {auth.user ? (
+                <div className="login-btn">
                     <h5 onClick={handleLogout} style={{ cursor: "pointer" }}>로그아웃</h5>
-                ) : (
-                    <div>
-                        <Link to="/login" style={{ textDecoration: "none"}}>
-                            <h5>로그인</h5>
-                        </Link>
-                        <h5> | </h5>
-                        <Link to="/register" style={{ textDecoration: "none"}}>
-                            <h5>회원가입</h5>
-                        </Link>
-                    </div>
-                )}
-                
-            </div>
+                </div>
+            ) : 
+                <div className="login-btn">
+                    <Link to="/login" style={{ textDecoration: "none"}}>
+                        <h5>로그인</h5>
+                    </Link>
+                    <h5> | </h5>
+                    <Link to="/register" style={{ textDecoration: "none"}}>
+                        <h5>회원가입</h5>
+                    </Link>
+                </div>
+            }
             <Link to="/settings">
                 <TbSettings className="settings-btn" />
             </Link>
